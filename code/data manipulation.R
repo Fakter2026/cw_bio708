@@ -60,9 +60,3 @@ iris_sub %>%
 iris_sub %>% 
   summarise(mu_sl = mean(Sepal.Length))
 
-
-
-
-
-
-
