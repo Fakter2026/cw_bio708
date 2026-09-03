@@ -119,9 +119,14 @@ print(v_x)
 m_num<-matrix(c(1,2,3,4,5,6,7,8,9),nrow=3,ncol=3)
 m_num
 
+mtcars
 df_mtcars <- as_tibble(mtcars)
-colnames()
+colnames(df_mtcars)
+rownames(df_mtcars)
+v_make<- rownames(df_mtcars)
+mutate(df_mtcars, v_make)
 
 
-
+df_mtcars
+filter(df_mtcars, c("mpg<20","disp>200"))
 
