@@ -96,6 +96,7 @@ n_make<- df_mtcars |>
 df_mtcars <- df_mtcars |> 
   mutate(f_cyl = factor(cyl))
 str(df_mtcars)
+view(df_mtcars)
 # 15: Draw a box plot showing car weight (`wt`) for each number of cylinders (`f_cyl`).
 library(ggplot2)
 (df_mtcars) |> 
