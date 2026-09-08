@@ -12,8 +12,8 @@ mu_x_ge<- prod(x)^(1/length(x))
 exp(sum(log(x))/length(x))
 mu_y_ge<- prod(y)^(1/length(y))
 exp(sum(log(y))/length(y))
-mu_x
-mu_y
+mu_x<- mean(x)
+mu_y<-mean(y)
 
 #median
 med_x<- median(x)
@@ -21,8 +21,8 @@ med_y<-median(y)
 
 # central tendency --------------------------------------------------------
 #variance
-(var_xsum<-((x- mean(x))^2)/length(x))
-(var_ysum<-(y-mean(y))^2)/length(y)
+(var_x<-sum<-((x- mean(x))^2)/length(x))
+(var_y<-sum<-((y-mean(y))^2)/length(y))
 #square root
 sqrt(var_x)
 sqrt(var_y)
